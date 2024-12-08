@@ -2,3 +2,7 @@
     color: white;
     pointer-events: none; /* 이벤트 처리 무효, 추후 구현해볼 것 */
 }
+
+#content1 {
+    text-align: center;
+}
