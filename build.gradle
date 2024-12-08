@@ -18,6 +18,10 @@ repositories {
 }
 
 dependencies {
+	// MySQL 연동
+	implementation 'com.mysql:mysql-connector-j'
+
+	// 롬복 관련
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 

@@ -2,7 +2,11 @@
 
 <!-- content -->
 <div class="bg-light text-black p-5">
-    <h2>{{name}}님, 반갑습니다!</h2>
+    <div class="bg-info text-black p-3">
+        {{#testList}}
+        <h2>{{name}}님, 안녕하세요! 나이는 {{age}}살 이시고, 취미는 {{hobby}}이군요!</h2>
+        {{/testList}}
+    </div>
 </div>
 
 
