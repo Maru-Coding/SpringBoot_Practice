@@ -28,7 +28,13 @@
 }
 
 #loginform {
-   width: 500px;
+   width: 600px;
+   margin: 0 auto;
+   border: 8px solid #e8e8e8;
+}
+
+#registerform {
+   width: 600px;
    margin: 0 auto;
    border: 8px solid #e8e8e8;
 }

@@ -28,7 +28,7 @@ public class TestController {
     }
 
     // 로그인 성공/실패여부 반환
-    @PostMapping("/login")
+    @PostMapping("/loginResult")
     public String loginResult(){
         // 로그인 실패 시
 
@@ -42,6 +42,15 @@ public class TestController {
         return "page/register";
     }
 
+    // 회원가입 성공/실패여부 반환
+    @PostMapping("/registerResult")
+    public String registerResult(){
+        // 회원가입 실패 시
+
+        // 회원가입 성공 시
+        return "redirect:/";
+    }
+
     // 메인 페이지
     @GetMapping("/main")
     public String mainPage(Model model){
@@ -52,19 +61,4 @@ public class TestController {
 
         return "page/main";
     }
-
-
-
-
-    // 테스트 페이지
-    @GetMapping("/test")
-    public String show(Model model){
-        List<TestEntity> testEntityList = testRepository.findAll();
-        log.info(testEntityList.toString());
-
-        model.addAttribute("testList", testEntityList);
-
-        return "test";
-    }
-
 }
