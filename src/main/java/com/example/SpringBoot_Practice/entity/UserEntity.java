@@ -11,18 +11,11 @@ import lombok.ToString;
 @ToString
 @Getter
 @Entity
-@Table(name="TEST")
-public class TestEntity {
+@Table(name="USER")
+public class UserEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
     @Column
     private String name;
-
-    @Column
-    private int age;
-
-    @Column
-    private String hobby;
 }

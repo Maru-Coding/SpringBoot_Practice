@@ -5,4 +5,30 @@
 
 #content1 {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#id {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#password {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#login {
+    display: inline-block;
+}
+
+#register {
+    display: inline-block;
+}
+
+#loginform {
+   width: 500px;
+   margin: 0 auto;
+   border: 8px solid #e8e8e8;
 }
